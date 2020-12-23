@@ -1,15 +1,67 @@
 <html>
     <header>
+    <nav class="left-nav">
     <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"> About </a>
     <a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"> Store </a>
-    <a href="https://mail.google.com/mail/?tab=wm&ogbl"> Gmail </a>
-    <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl"> Images </a>
-    <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ"> Sign In </a>
+    </nav>
+    <nav class="right-nav">
+    <a  href="https://mail.google.com/mail/?tab=wm&ogbl"> Gmail </a>
+    <a  href="https://www.google.com/imghp?hl=en&tab=wi&ogbl"> Images </a>
+    <a  href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ"> Sign In </a>
+    </nav>
     </header>
     <body>
+        <div class="main">
     <a href="www.google.com"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    <form type="submit">
+    <form>
         <input type="text">
+        <br>
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
     </form>
+        </div>
     </body>
+    <footer class="footnotes">
+        <div class="left-footer">
+        <a href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+        <a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
+        </div>
+        <div class="right-footer">
+        <a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+        <a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+        <a href="https://www.google.com/preferences?hl=en">Settings</a>
+        </div>
+    </footer>
 </html>
+
+<style>
+    nav {padding: 10px;}
+    .left-nav {left: 10px;
+            text-align: left;
+            float:left;
+            display: block;
+            }
+    .right-nav {text-align: right}
+    .main {margin: auto;
+        position: relative;
+        text-align: center;
+        top: 50px;}
+    input {margin: 20px;
+        padding: 7px;
+        width: 30%;
+        border-radius: 10px;}
+    button {margin: 30px;
+            padding: 5px;}
+    .footnotes {position: fixed;
+            bottom: 0px;
+            background-color: lightgrey;
+            width: 100%;
+            padding: 10px;
+            right: 0px;}
+    .left-footer {text-align:left;
+                float: left;}
+    .right-footer {text-align: right;
+                float:right;}
+    a {text-decoration: none;
+        padding: 10px;}
