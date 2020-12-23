@@ -7,18 +7,18 @@
     <nav class="right-nav">
     <a  href="https://mail.google.com/mail/?tab=wm&ogbl"> Gmail </a>
     <a  href="https://www.google.com/imghp?hl=en&tab=wi&ogbl"> Images </a>
-    <a  href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ"> Sign In </a>
+    <a  class= "signin" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ"> Sign In </a>
     </nav>
     </header>
     <body>
         <div class="main">
     <a href="www.google.com"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    <form>
+        <form>
         <input type="text">
         <br>
         <button>Google Search</button>
         <button>I'm Feeling Lucky</button>
-    </form>
+        </form>
         </div>
     </body>
     <footer class="footnotes">
@@ -40,22 +40,27 @@
     .left-nav {left: 10px;
             text-align: left;
             float:left;
-            display: block;
-            }
+            display: block;}
     .right-nav {text-align: right}
     .main {margin: auto;
         position: relative;
         text-align: center;
-        top: 50px;}
+        top: 200px;}
     input {margin: 20px;
         padding: 7px;
         width: 30%;
         border-radius: 10px;}
     button {margin: 30px;
-            padding: 5px;}
+            padding: 10px;
+            border: none;
+            border-radius: 7px;}
+    .signin {background-color: #4386f9;
+            color:white;
+            border-radius: 3px;
+            padding: 7px;}
     .footnotes {position: fixed;
             bottom: 0px;
-            background-color: lightgrey;
+            background-color: #f2f2f2;
             width: 100%;
             padding: 10px;
             right: 0px;}
@@ -64,4 +69,7 @@
     .right-footer {text-align: right;
                 float:right;}
     a {text-decoration: none;
-        padding: 10px;}
+        padding: 10px;
+        color: #6b6b6b;}
+    a:hover {text-decoration: underline;}
+    button:hover {box-shadow:  0 0 6px lightgrey;}
